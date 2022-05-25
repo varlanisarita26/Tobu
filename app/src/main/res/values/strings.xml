@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="hey_jatin"><font color='#8FFFFFFF'>Hey</font><font color='#FFFFFFFF'> Jatin! </font></string>
+    <string name="view_all">View All</string>
+    <string name="recent_moments">Recent Moments</string>
+    <string name="share_moment">Share Moment</string>
+    <string name="frequent_contacts">Frequent Contacts</string>
+    <string name="capture_tobu_moments">Capture Tobu Moments</string>
+    <string name="mike_wazowski">Mike Wazowski</string>
+    <string name="_2_moments">2 Moments</string>
+    <string name="moments">MOMENTS</string>
+    <string name="create_a_memory_book">Create a Memory Book</string>
+    <string name="action_required">Action Required</string>
+    <string name="_4_more">+4 more</string>
+    <string name="let_s_go">Let\'s Go!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_moment">Add to Moment</string>
+    <string name="home">Home</string>
+    <string name="log_out">Log Out</string>
+    <string name="moments_nav">Moments</string>
+    <string name="my_memory_book">My Memory Book</string>
+    <string name="contacts">Contacts</string>
+    <string name="profile">Profile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
