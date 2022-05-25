@@ -33,7 +33,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         if (LISTTYPE ==0 || LISTTYPE == 1)
             listItem = layoutInflater.inflate(R.layout.child_item_layout, parent, false);
-        else if (LISTTYPE ==2 || LISTTYPE == 3)
+        else if (LISTTYPE == 3)
             listItem = layoutInflater.inflate(R.layout.child_item_moments, parent, false);
         else if (LISTTYPE == 4)
             listItem = layoutInflater.inflate(R.layout.layout_add_to_mpments, parent, false);
@@ -52,13 +52,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
             holder.rlContacts.setVisibility(View.VISIBLE);
             holder.rlMoments.setVisibility(View.GONE);
         }
-        else if (LISTTYPE == 2){
-            holder.rlCalender.setVisibility(View.VISIBLE);
-            holder.rlAction.setVisibility(View.GONE);
-        }
         else if (LISTTYPE == 3){
             holder.rlAction.setVisibility(View.VISIBLE);
-            holder.rlCalender.setVisibility(View.GONE);
         }
         else if (LISTTYPE == 4){
             if (position == 0 ){
@@ -86,7 +81,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         RelativeLayout rlMoments,rlContacts,rlAction,rlAddToMoments,rlMomentsItem;
-        CardView rlCalender;
         ImageView ivMoments;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -94,8 +88,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
                 rlMoments = itemView.findViewById(R.id.rlMoments);
                 rlContacts = itemView.findViewById(R.id.rlContacts);
             }
-            else if (LISTTYPE ==2 || LISTTYPE == 3){
-                rlCalender = itemView.findViewById(R.id.cardCalender);
+            else if (LISTTYPE == 3){
                 rlAction = itemView.findViewById(R.id.rlAction);
             }
             else if (LISTTYPE == 4)
